@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >  
+<mapper namespace="com.jk.mapper.user">
+
+
+ <!--  <insert id="insertBook" parameterType="book">
+        INSERT INTO t_books
+        (t_id, t_name)
+        VALUES
+        (t_books_seq.nextval, #{bookName})
+   </insert>
+
+    <select id="selectBookCount" resultType="int">
+        SELECT count(t_id) FROM t_books
+    </select>
+
+    <select id="selectBookList" parameterType="book" resultType="book">
+        select * from (select b1.* , rownum r from
+        (select b.t_id as "bookID",
+        b.t_name as "bookName"  from t_books b) b1
+        where rownum <![CDATA[<=]]> #{endPos}) b2 where r >=#{startPos}
+    </select>
+
+    <delete id="deleteBookByID" parameterType="book">
+        delete from t_books where t_id = #{bookID}
+    </delete>
+
+    <select id="toEditBookPage" parameterType="book" resultType="book" >
+        SELECT b.t_id as "bookID",
+        b.t_name as "bookName"  FROM t_books b
+        WHERE t_id = #{bookID}
+    </select>
+
+    <update id="updateBookByBookId" parameterType="book">
+        UPDATE t_books set t_name = #{bookName} where t_id = #{bookID}
+    </update>-->
+   
+</mapper>   
